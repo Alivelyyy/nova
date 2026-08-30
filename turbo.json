@@ -1,0 +1,36 @@
+{
+  "$schema": "https://v2-8-13.turborepo.dev/schema.json",
+  "globalEnv": ["CI", "NOVA_DISABLE_SHARE"],
+  "globalPassThroughEnv": ["CI", "NOVA_DISABLE_SHARE"],
+  "tasks": {
+    "typecheck": {},
+    "build": {
+      "dependsOn": [],
+      "outputs": ["dist/**"]
+    },
+    "nova#test": {
+      "dependsOn": ["^build"],
+      "outputs": [],
+      "passThroughEnv": ["*"]
+    },
+    "@nova-ai/core#test": {
+      "dependsOn": ["^build"],
+      "outputs": []
+    },
+    "@nova-ai/function#test": {
+      "outputs": []
+    },
+    "@nova-ai/app#test": {
+      "dependsOn": ["^build"],
+      "outputs": []
+    },
+    "@nova-ai/ui#test": {
+      "dependsOn": ["^build"],
+      "outputs": []
+    },
+    "@nova-ai/session-ui#test": {
+      "dependsOn": ["^build"],
+      "outputs": []
+    }
+  }
+}
