@@ -127,3 +127,12 @@ If you are working on a project that's related to Nova and is using "nova" as pa
 ---
 
 **Join our community** [Discord](https://discord.gg/nova) | [X.com](https://x.com/nova)
+
+
+---
+
+## 📚 Full Project Documentation
+
+A complete **5-page engineering deep-dive** for this repo — overview & purpose, technology stack & architecture, feature-by-feature breakdown, code internals & systems design, and development timeline & resume highlights — is available in [`DOCUMENTATION.md`](DOCUMENTATION.md).
+
+*Part of the complete coding-history dossier generated on 2026-10-18.*
